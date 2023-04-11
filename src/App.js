@@ -6,14 +6,12 @@ import Footer from './footer';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header creator={"Ben Halliwell"} />
-      {<Main />
-      <Footer />}
+      <Main />
+      <Footer creator={"Ben Halliwell"} />
     </div>
   );
 }
-
-
 
 export default App;
