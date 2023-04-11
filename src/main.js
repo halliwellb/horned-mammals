@@ -3,21 +3,20 @@ import HornedMammal from './HornedMammals';
 import mammals from "./HornedAnimals";
 
 function createMammals(mammals) {
-    return(
+    return (
         <HornedMammal className="myAnimal"
-        key = {mammals._id}
-        imageSRC = {mammals.image_url}
-        altName = {mammals.title}
-        description = {mammals.description}
-        horns= {mammals.horns}
+            key={mammals._id}
+            imageSRC={mammals.image_url}
+            altName={mammals.title}
+            description={mammals.description}
+            horns={mammals.horns}
         />
     )
 }
 
-
 class Main extends React.Component {
     render() {
-        return(
+        return (
             <div>
                 {mammals.map(createMammals)}
             </div>
